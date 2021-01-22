@@ -11,16 +11,16 @@ import javax.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "credit")
+@Table(name = "CREDIT")
 @EqualsAndHashCode(callSuper = true)
 public class Credit extends AbstractEntity implements Comparable<Credit> {
 
     @NotNull
-    @Column(name = "credit_limit")
+    @Column(name = "CREDIT_LIMIT")
     private Long creditLimit;
 
     @NotNull
-    @Column(name = "credict_percent")
+    @Column(name = "CREDIT_PERCENT")
     private Double creditPercent;
 
     public Credit() {

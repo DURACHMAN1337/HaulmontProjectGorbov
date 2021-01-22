@@ -7,36 +7,36 @@ import lombok.EqualsAndHashCode;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import java.util.Locale;
+
 
 @Entity
 @Data
-@Table(name = "clients")
+@Table(name = "CLIENTS")
 @EqualsAndHashCode(callSuper = true)
 public class Client extends AbstractEntity implements Comparable<Client> {
 
     @NotNull
-    @Column(name = "firstname")
+    @Column(name = "FIRSTNAME")
     private String firstname;
 
     @NotNull
-    @Column(name = "surname")
+    @Column(name = "SURNAME")
     private String surname;
 
     @NotNull
-    @Column(name = "patronymic")
+    @Column(name = "PATRONYMIC")
     private String patronymic;
 
     @NotNull
-    @Column(name = "phone", unique = true)
+    @Column(name = "PHONE", unique = true)
     private Long phoneNumber;
 
     @NotNull
-    @Column(name = "email", unique = true)
+    @Column(name = "EMAIL", unique = true)
     private String email;
 
     @NotNull
-    @Column(name = "passport", unique = true)
+    @Column(name = "PASSPORT", unique = true)
     private Long passport;
 
     public Client() {
