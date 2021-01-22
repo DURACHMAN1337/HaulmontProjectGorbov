@@ -11,32 +11,32 @@ import javax.persistence.Table;
 
 @Entity
 @Data
-@Table(name = "CLIENTS")
+@Table(name = "clients")
 @EqualsAndHashCode(callSuper = true)
 public class Client extends AbstractEntity implements Comparable<Client> {
 
     @NotNull
-    @Column(name = "FIRSTNAME")
+    @Column(name = "firstname")
     private String firstname;
 
     @NotNull
-    @Column(name = "SURNAME")
+    @Column(name = "surname")
     private String surname;
 
     @NotNull
-    @Column(name = "PATRONYMIC")
+    @Column(name = "patronymic")
     private String patronymic;
 
     @NotNull
-    @Column(name = "PHONE", unique = true)
+    @Column(name = "phone", unique = true)
     private Long phoneNumber;
 
     @NotNull
-    @Column(name = "EMAIL", unique = true)
+    @Column(name = "email", unique = true)
     private String email;
 
     @NotNull
-    @Column(name = "PASSPORT", unique = true)
+    @Column(name = "passport", unique = true)
     private Long passport;
 
     public Client() {

@@ -11,24 +11,24 @@ import java.util.Date;
 
 @Entity
 @Data
-@Table(name = "PAYMENT_SCHEDULE")
+@Table(name = "payment_schedule")
 @EqualsAndHashCode(callSuper = true)
 public class PaymentSchedule extends AbstractEntity {
 
     @NotNull
-    @Column(name = "DATE_OF_PAYMENT")
+    @Column(name = "date_of_payment")
     private Date dateOfPayment;
 
     @NotNull
-    @Column(name = "PAYMENT_AMOUNT")
+    @Column(name = "payment_amount")
     private Double paymentAmount;
 
     @NotNull
-    @Column(name = "BODY_REPAYMENT_AMOUNT")
+    @Column(name = "body_repayment_amount")
     private Double bodyRepayment;
 
     @NotNull
-    @Column(name = "PERCENT_REPAYMENT_AMOUNT")
+    @Column(name = "percent_repayment_amount")
     private Double percentRepayment;
 
 

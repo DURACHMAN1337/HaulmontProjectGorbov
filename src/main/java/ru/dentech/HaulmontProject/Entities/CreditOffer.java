@@ -8,31 +8,31 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "CREDIT_OFFERS")
+@Table(name = "credit_offers")
 @EqualsAndHashCode(callSuper = true)
 public class CreditOffer extends AbstractEntity {
 
     @NotNull
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "CLIENT_ID")
+    @JoinColumn(name = "client_id")
     private Client client;
 
     @NotNull
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "CREDIT_ID")
+    @JoinColumn(name = "credit_id")
     private Credit credit;
 
     @NotNull
-    @Column(name = "CREDIT_AMOUNT")
+    @Column(name = "credit_amount")
     private Long creditAmount;
 
     @NotNull
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "PAYMENT_SCHEDULE")
+    @JoinColumn(name = "payment_schedule")
     private PaymentSchedule paymentSchedule;
 
     @NotNull
-    @Column(name = "BANK_ID")
+    @Column(name = "bank_id")
     private Long bankID;
 
     public CreditOffer() {
