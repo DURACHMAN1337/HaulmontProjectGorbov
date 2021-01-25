@@ -15,7 +15,7 @@ import javax.persistence.Table;
 @Entity
 @Data
 @EqualsAndHashCode(callSuper = true)
-@Table("banks")
+@Table(name = "banks")
 public class Bank extends AbstractEntity {
 
     @NotNull

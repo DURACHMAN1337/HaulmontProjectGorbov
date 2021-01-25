@@ -3,6 +3,7 @@ package ru.dentech.HaulmontProject.Services;
 import ru.dentech.HaulmontProject.Entities.Credit;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface CreditService {
     void delete(Credit credit);
@@ -10,7 +11,7 @@ public interface CreditService {
     void addCredit(Credit credit);
     List<Credit> getAll();
     List<Credit> sortAll();
-    Credit getCredit(Long creditLimit, Double creditPercent);
+    Optional<Credit> getCredit(Long creditLimit, Double creditPercent);
 
 
 }

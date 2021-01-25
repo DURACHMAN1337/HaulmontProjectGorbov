@@ -3,6 +3,7 @@ package ru.dentech.HaulmontProject.Services;
 import ru.dentech.HaulmontProject.Entities.Client;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ClientService {
     void deleteById(Long id);
@@ -10,5 +11,5 @@ public interface ClientService {
     void addClient(Client client);
     List<Client> getAll();
     List<Client> sortAll();
-    Client getClient(Long passport);
+    Optional<Client> getClient(Long passport);
 }
