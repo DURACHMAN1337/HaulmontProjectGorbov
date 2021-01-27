@@ -7,7 +7,7 @@ import ru.dentech.HaulmontProject.Services.PaymentScheduleService;
 
 import java.util.List;
 
-public class PaymentScheduleImpl implements PaymentScheduleService {
+public class PaymentScheduleServiceImpl implements PaymentScheduleService {
 
     @Autowired
     private PaymentScheduleRepo paymentScheduleRepo;
